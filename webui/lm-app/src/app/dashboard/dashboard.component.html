@@ -1,0 +1,22 @@
+
+ <div align="center">
+    <h1 align="center">{{title}}</h1>
+   <table border="1">
+     <tr>
+       <td><app-my-details></app-my-details></td>
+        <td *ngIf="empId != 3000"><app-managerdetails></app-managerdetails></td>
+        <td *ngIf="empId ==3000"> <h2>No Manager</h2></td>
+        </tr>
+        <br>
+        <tr>
+          <td *ngIf= "!showElement" colspan="2"><app-show-history></app-show-history></td>
+          <td *ngIf="showElement" colspan="2"><app-apply-leave></app-apply-leave></td>
+        </tr>
+        <br>
+        <tr>
+          <td *ngIf= "!showElement1" colspan ="2"><app-pending></app-pending></td>
+          <td *ngIf="showElement1" colspan="2"><app-appdeny></app-appdeny></td>
+        </tr>
+   </table>
+</div>
+

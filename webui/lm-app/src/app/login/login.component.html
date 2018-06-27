@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div>
+      <h1 align="center">{{title}}</h1>
+   <div class="container">
+     <table>
+   
+    <tr>
+        <td>Employee Id</td>
+          <td>:</td>
+          <td><input type="text" placeholder="Enter Employee Id" name="empid" [(ngModel)]="model.uid" ></td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td>Password</td>
+          <td>:</td>
+         <td><input type="password" placeholder="Enter Password" name="psw"></td>
+       </tr>
+       <tr>
+         <td><button type="submit"(click)="doLogin()">Login</button>
+         <button type="button">Cancel</button>
+         </tr>
+  
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+

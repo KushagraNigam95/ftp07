@@ -1,0 +1,65 @@
+<div style="text-align:center">
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+  <div>
+      <table border="1">
+          <thead>
+              <tr id="kkk">
+                  <th>Leave ID</th>
+                  <th>Number of Days</th>
+                  <th>Start Date</th>
+                  <th>End Date</th>
+                  <th>Leave type</th>
+                  <th>Status</th>
+                  <th>Reason</th>
+                  <th>Applied On</th>
+                  <th>Manager Comments</th>
+              </tr>
+          </thead>
+
+          <tbody class="leaveDetails">
+                <tr *ngFor="let leavedetail of leaveDetails">
+                    <td>
+                        <h5>{{leavedetail.levId}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{leavedetail.levNoOfDays}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{leavedetail.levStartDate | date: 'dd'}}/{{leavedetail.levStartDate | date:'MM'}}/{{leavedetail.levStartDate | date: 'yyyy'}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{leavedetail.levEndDate | date: 'dd'}}/{{leavedetail.levEndDate | date:'MM'}}/{{leavedetail.levEndDate | date: 'yyyy'}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{leavedetail.levType}}</h5>
+                    </td>
+                    <td>
+                        <h5>{{leavedetail.levStatus}}</h5>
+                    </td>
+                    <td>
+                            <h5>{{leavedetail.levReason}}</h5>
+                        </td>
+                        <td>
+                            <h5>{{leavedetail.levAppliedOn | date: 'dd'}}/{{leavedetail.levAppliedOn | date:'MM'}}/{{leavedetail.levAppliedOn | date: 'yyyy'}}</h5>
+                        </td>
+                        <td>
+                            <h5>{{leavedetail.levMgrComments}}</h5>
+                        </td>
+    
+
+
+          </table>
+          <tr></tr>
+  </div><div>
+         <p align="center">
+         <button type="button"(click)="newApp()">New Application</button>
+         </p>
+  </div>
+
+
+          
+          
+          

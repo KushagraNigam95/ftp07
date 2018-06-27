@@ -1,0 +1,43 @@
+<body>
+
+  
+
+
+<div>
+    
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th >Employee ID</th>
+                <th>Employee Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Manager ID</th>
+                <th width ="10%"></th>
+            </tr>
+        </thead>
+        <tbody class="employees">
+            <tr *ngFor="let employee of employees">
+                <td>
+                    <h5>{{employee.empID}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empName}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empMail}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empPhone}}</h5>
+                </td>
+                <td>
+                    <h5>{{employee.empMgrId}}</h5>
+                </td>
+                <td >
+                    <input type="submit" (click)="login(employee.empID,employee.empMgrId)" value="Login" id="ddd">
+                </td>                
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>

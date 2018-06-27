@@ -1,0 +1,34 @@
+<div style="text-align:center">
+        <h1>
+          <b>{{title}}</b>
+        </h1>
+        </div>
+        <div>
+        <Table>
+        <tr>
+        <td>Employee ID:</td> 
+        <td>{{employee.empID}} </td>
+        <td>Date Of Joining :</td>
+        <td> {{employee.empDoj | date: 'dd'}}/{{employee.empDoj | date:'MM'}}/{{employee.empDoj | date: 'yyyy'}}</td>
+        </tr>
+        <tr>
+        <td>Full Name  :</td> 
+        <td>{{employee.empName}} </td> 
+        <td> Department :</td>
+        <td>{{employee.empDept}} </td>
+        </tr>
+        <tr>
+        <td> Email Address :</td>
+        <td> {{employee.empMail}}</td>
+        </tr>
+        <tr>
+        <td> Mobile Number :</td>
+        <td> {{employee.empPhone}}</td>
+        </tr>
+        <tr>
+        <br><br><br><br><td> Available Leave Balance :</td>
+        <td>{{employee.empLeaveBalance}} </td>
+        </tr>
+        
+        </Table>
+        </div>

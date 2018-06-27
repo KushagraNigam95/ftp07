@@ -1,0 +1,68 @@
+
+<div style="text-align:center">
+  <h1>
+    <b>{{title}}</b>
+  </h1>
+</div>
+<div>
+  <br>
+  </div>
+  <div>
+  <br>
+  </div>
+<div>
+<table align ="center">
+<tr>
+<td>Employee ID:</td> 
+<td>{{employee.empID}}</td> 
+<td> Start Date :</td>
+<td>{{leaveDetails.levStartDate}}</td>
+
+</tr>
+
+<tr>
+<td>Employee Name:  </td>
+<td>{{employee.empName}}</td>
+<td> End Date : </td>
+<td>{{leaveDetails.levEndDate}}</td>
+
+</tr>
+
+<tr>
+<td> Leave Balance:</td> 
+<td>{{employee.empLeaveBalance}}</td>
+<td> Number of Days:</td> 
+<td>{{leaveDetails.levNoOfDays}}</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td></td>
+
+<td> Leave Type:</td> <td>{{leaveDetails.levType}}</td>
+</tr>
+
+
+<tr>
+<td></td>
+<td></td>
+<td> Reason: </td>
+<td>{{leaveDetails.levReason}}</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td><textarea rows="2" cols="35" [(ngModel)]="leaveDetails.levMgrComments">" "</textarea></td>
+
+</tr>
+
+<tr colspan=3>
+<td><button class="button" (click)="doApprove()">Approve</button></td>
+<td><button class="button" (click)="doDeny()">Deny</button></td>
+<td><button class="button" (click)="doCancel()">Cancel</button></td>
+</tr>
+
+
+</table>
+<div><b>{{message}}</b></div>
+</div>

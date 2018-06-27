@@ -1,0 +1,35 @@
+table,td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 50px;
+    border-style: solid;
+}
+#abc{
+    background-color:#6495ED;
+    
+
+}
+#xyz{
+    background-color:#6495ED;
+
+}
+div{
+    text-align:center; 
+}
+#kkk {
+    background-color: #1E90FF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.highlighted
+{
+    background-color: #87cEFA; 
+    
+}
